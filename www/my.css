@@ -4,9 +4,19 @@
 .text-align-right {
   text-align: right;
 }
-.blue {
-  background-color:#3CD3F3!important;
-}
+
+.blue {background-color:#3CD3F3}
+#opponents {background-color:#e9e9e9;color:black;margin:0;padding:0;list-style:none;text-shadow:none}
+.challenger {border-bottom:1px solid #DCDCDC;padding-bottom:10px}
+.opponent h3 {}
+.avatar {height:55px;width:55px;float:left; padding: 9px;}
+.venue span {font-weight:bold}
+.challenge_button {float:right;color:white;background-color:#3296c4;margin:20px 20px 0 4px;padding:10px 20px}
+.challenge_button a {color:white!important;text-decoration:none;text-shadow:none;font-size:.6em}
+.challenge {padding:0!important}
+.vitals {padding-top:12px;}
+.vitals h3, .vitals p {padding:0;margin:0;line-height:1.2em;text-shadow:none}
+.vitals p {font-size:.8em}
 
 /** CSS for non-standard jQuery Mobile styles or Codiqa components **/
 .split-wrapper {
