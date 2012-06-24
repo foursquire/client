@@ -21,10 +21,11 @@
 #signin {
 	background-image: url('assets/signin.png');
 	background-repeat: no-repeat;
+	background-position: top -22px;
 }
 #connect_fq {
 	position: absolute;
-	top: 160px;
+	top: 135px;
 	left: 10px;
 }
 
