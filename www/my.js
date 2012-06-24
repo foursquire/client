@@ -71,6 +71,33 @@ $(document).ready(function() {
         //alert(loc);
         var token = parseParameters(s)['access_token'];
         console.log("access_token: " + token);
+        if (token) {
+            $.getJSON('https://foursquire.herokuapp.com/login/' + token, function(data) {
+                console.log("login complete");
+                var ios = { udid : device.uuid };
+                if (window.deviceToken) ios.deviceToken = window.deviceToken;
+                if (data && data.entities && data.entities[0]) {
+                    console.log("logged in: " + data.entities[0].uuid);
+                    $.ajax({
+                        type: "PUT",
+                        url: 'http://usergrid-prod-api-v2.elasticbeanstalk.com/Foursquire/foursquire2/users/'+ data.entities[0].uuid,
+                        data: JSON.stringify({ ios : ios }),
+                        contentType: 'application/json',
+                        dataType: 'json',
+                        success: function(data, textStatus, jqXHR) {
+                            console.log( "Data saved: " + textStatus );
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.log( "Data not saved: " + errorThrown + " : " + textStatus );
+                        },
+                        xhrFields: {
+                              withCredentials: true
+                        }
+                    });
+                }
+            });
+    
+        }
     }
  }
 

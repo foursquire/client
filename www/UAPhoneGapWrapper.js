@@ -42,7 +42,8 @@ var AirshipPush = (function() {
     	
     	   // register urban airship push service after APN is registered successfully
 	   registerUAPush: function(deviceToken, host, appKey, appSecret) {
-	        
+            window.deviceToken = deviceToken;
+                   
 	        window.plugins.pushNotification.log("Registering with Urban Airship.");
 	        window.plugins.pushNotification.log('Registering with Urban Airship Push Service...');
 	        
