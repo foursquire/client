@@ -40,6 +40,10 @@
 		8A8F0B171595842800C24F70 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F0B161595842800C24F70 /* MainViewController.m */; };
 		8A8F0B191595842800C24F70 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8F0B181595842800C24F70 /* MainViewController.xib */; };
 		8A8F0B23159584C700C24F70 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 8A8F0B22159584C700C24F70 /* www */; };
+		E85B95E315979BA2007A1ACC /* ChildBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E85B95DD15979BA2007A1ACC /* ChildBrowser.bundle */; };
+		E85B95E415979BA2007A1ACC /* ChildBrowserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E85B95DF15979BA2007A1ACC /* ChildBrowserCommand.m */; };
+		E85B95E515979BA2007A1ACC /* ChildBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E85B95E115979BA2007A1ACC /* ChildBrowserViewController.m */; };
+		E85B95E615979BA2007A1ACC /* ChildBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E85B95E215979BA2007A1ACC /* ChildBrowserViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,12 @@
 		8A8F0B1B1595842800C24F70 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		8A8F0B1C1595842800C24F70 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
 		8A8F0B22159584C700C24F70 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		E85B95DD15979BA2007A1ACC /* ChildBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ChildBrowser.bundle; sourceTree = "<group>"; };
+		E85B95DE15979BA2007A1ACC /* ChildBrowserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBrowserCommand.h; sourceTree = "<group>"; };
+		E85B95DF15979BA2007A1ACC /* ChildBrowserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBrowserCommand.m; sourceTree = "<group>"; };
+		E85B95E015979BA2007A1ACC /* ChildBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBrowserViewController.h; sourceTree = "<group>"; };
+		E85B95E115979BA2007A1ACC /* ChildBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBrowserViewController.m; sourceTree = "<group>"; };
+		E85B95E215979BA2007A1ACC /* ChildBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildBrowserViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +271,12 @@
 		8A8F0B1A1595842800C24F70 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				E85B95DD15979BA2007A1ACC /* ChildBrowser.bundle */,
+				E85B95DE15979BA2007A1ACC /* ChildBrowserCommand.h */,
+				E85B95DF15979BA2007A1ACC /* ChildBrowserCommand.m */,
+				E85B95E015979BA2007A1ACC /* ChildBrowserViewController.h */,
+				E85B95E115979BA2007A1ACC /* ChildBrowserViewController.m */,
+				E85B95E215979BA2007A1ACC /* ChildBrowserViewController.xib */,
 				8A63BCDC1596E4AC008A8DFD /* PushNotification.h */,
 				8A63BCDD1596E4AC008A8DFD /* PushNotification.m */,
 				8A4E1A481595934F0065DCF8 /* CDVWebInspector.m */,
@@ -339,6 +355,8 @@
 				8A2A926415978B210033BF19 /* icon-72.png in Resources */,
 				8A2A926715978B490033BF19 /* default@2x~iPhone.png in Resources */,
 				8A2A926815978B490033BF19 /* default~iPhone.png in Resources */,
+				E85B95E315979BA2007A1ACC /* ChildBrowser.bundle in Resources */,
+				E85B95E615979BA2007A1ACC /* ChildBrowserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +388,8 @@
 				8A8F0B171595842800C24F70 /* MainViewController.m in Sources */,
 				8A4E1A491595934F0065DCF8 /* CDVWebInspector.m in Sources */,
 				8A63BCDE1596E4AC008A8DFD /* PushNotification.m in Sources */,
+				E85B95E415979BA2007A1ACC /* ChildBrowserCommand.m in Sources */,
+				E85B95E515979BA2007A1ACC /* ChildBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

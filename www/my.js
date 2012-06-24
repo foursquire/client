@@ -36,4 +36,59 @@
       tabBar.tabbar('setActive', '#' + id);
     }
   });
+ 
+
 })(jQuery);
+
+$(document).ready(function() {
+
+ var client_browser = null;
+
+ function parseParameters(s) {
+    var x = s.split('&');
+    var i = 0;
+    var q = {};
+    while (i < x.length) {
+        var t = x[i].split('=', 2);
+        var name = unescape(t[0]);
+        q[name] = unescape(t[1]);
+        i++;
+    }
+    return q;
+ }
+
+ var authorize_url = "https://foursquare.com/oauth2/authenticate?client_id=BSNUGYGRRVEK3KR0ZOWUUWHXPOLWYSNNAILOQIGC1GRWBGJA&response_type=token&redirect_uri=https://foursquire.herokuapp.com/callback&display=touch";
+                  
+ function foursquareAuthLocChanged(loc) {
+    /* Here we check if the url is the login success */
+    if (loc.indexOf('https://foursquire.herokuapp.com/callback') == 0) {
+        client_browser.close();
+        loc = unescape(loc);
+        console.log("foursquareAuthLocChanged: " + loc);
+        var s = loc.match(/#(.*)$/)[1];
+        console.log("matched: " + s);
+        //alert(loc);
+        var token = parseParameters(s)['access_token'];
+        console.log("access_token: " + token);
+    }
+ }
+
+ function onFoursquareAuthBtn() { 
+    console.log("onFoursquareAuthBtn");
+
+    client_browser = ChildBrowser.install(); 
+    client_browser.onLocationChange = function(loc) {
+        foursquareAuthLocChanged(loc);
+    };
+    if (client_browser != null) {
+        window.plugins.childBrowser.showWebPage(authorize_url);
+    }
+    else {
+      console.log("no child browser");
+    }
+ }
+
+  $("#connect_fq").bind("tap", onFoursquareAuthBtn); 
+                  
+                  
+});
