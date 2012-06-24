@@ -4,6 +4,9 @@
 .text-align-right {
   text-align: right;
 }
+.blue {
+  background-color:#3CD3F3;
+}
 
 /** CSS for non-standard jQuery Mobile styles or Codiqa components **/
 .split-wrapper {
