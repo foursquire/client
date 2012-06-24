@@ -73,7 +73,81 @@
     </head>
     <body onload="onBodyLoad()">
         <!-- Home -->
-        <div data-role="page" id="page1">
+        <!-- Home -->
+        <div data-role="page" id="home" data-theme="c">
+          <div data-role="content" class="challenge">
+                <div id="branding">
+
+                </div>
+            <p style="padding:4px;margin:0;background-color:#848484;font-size:14px;color:white;font-weight:normal;text-shadow:none">Challenge an opponent</p>
+            <div>                                        
+                    <ul data-role="" data-inset="true" id="opponents">
+                      <li class="challenger">
+                      	<img class="avatar" src="https://is0.4sqi.net/userpix_thumbs/1420_1236964330.jpg" /> 
+                      	<div class="challenge_button"><a href="#map">Challenge</a></div>
+                      	<div class="vitals">
+                      		<h3>Tim Anglade</h3>
+                      		<p class="venue">
+                      			<span>Last seen: </span>Apigee Corp
+                      		</p>
+                      		<p class="city">Palo Alto, CA</p>
+                      	</div>
+                	</li>
+                      <li class="challenger">
+                      	<img class="avatar" src="https://is0.4sqi.net/userpix_thumbs/1420_1236964330.jpg" /> 
+                      	<div class="challenge_button"><a href="#map">Challenge</a></div>
+                      	<div class="vitals">
+                      		<h3>Marsh Gardiner</h3>
+                      		<p class="venue">
+                      			<span>Last seen: </span>Caltrain Station
+                      		</p>
+                      		<p class="city">Palo Alto, CA</p>
+                      	</div>
+                	</li>
+                      <li class="challenger">
+                      	<img class="avatar" src="https://is0.4sqi.net/userpix_thumbs/1420_1236964330.jpg" /> 
+                      	<div class="challenge_button"><a href="#map">Challenge</a></div>
+                      	<div class="vitals">
+                      		<h3>Ed Anuff</h3>
+                      		<p class="venue">
+                      			<span>Last seen: </span>AOL West Building
+                      		</p>
+                      		<p class="city">Palo Alto, CA</p>
+                      	</div>
+                	</li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+        <!-- /challenge -->
+        
+        <div data-role="page" id="joustopt" data-theme="c">
+            <div data-role="content">
+                <div id="branding">
+                    <h1>Field of battle</h1>
+                </div>
+                <div class="choice_list">                                        
+					<form action="#" method="get">
+
+<fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal venue-type"><div role="heading" class="ui-controlgroup-label">Select venue:</div>
+<div class="ui-controlgroup-controls">
+	         	<div class="ui-radio"><input style="display:none!important" type="radio" name="venue" id="foo" value="drinks"><label style="display:none!important" for="foo" artdata-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-up-c ui-radio-off"><span class="ui-btn-inner"><span class="ui-btn-text">Drinks</span></span></label></div>   	
+	         	<div class="ui-radio"><input type="radio" name="venue" id="drinks" value="drinks"><label for="drinks" artdata-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-up-c ui-radio-off"><span class="ui-btn-inner ui-corner-left"><span class="ui-btn-text">Drinks</span></span></label></div>
+	         	<div class="ui-radio"><input type="radio" name="venue" id="coffee" value="coffee"><label for="coffee" artdata-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-up-c ui-radio-off"><span class="ui-btn-inner"><span class="ui-btn-text">Coffee</span></span></label></div>
+	         	<div class="ui-radio"><input type="radio" name="venue" id="food" value="food"><label for="food" artdata-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-up-c ui-radio-off"><span class="ui-btn-inner"><span class="ui-btn-text">Food</span></span></label></div>
+	         	<div class="ui-radio"><input type="radio" name="venue" id="shops" value="shops"><label for="shops" artdata-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-up-c ui-radio-off"><span class="ui-btn-inner"><span class="ui-btn-text">Shops</span></span></label></div>
+	         	<div class="ui-radio"><input type="radio" name="venue" id="outdoors" value="outdoors"><label for="outdoors" artdata-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-up-c ui-radio-off"><span class="ui-btn-inner"><span class="ui-btn-text">Outdoors</span></span></label></div>
+	         	<div class="ui-radio"><input type="radio" name="venue" id="art" value="art"><label for="art" artdata-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-up-c ui-radio-off"><span class="ui-btn-inner"><span class="ui-btn-text">Art</span></span></label></div>
+	         	<div class="ui-radio"><input style="display:none!important" type="radio" name="venue" id="bar" value="art"><label  style="display:none!important" for="bar" artdata-shadow="false" data-iconshadow="true"  data-theme="c" class="ui-btn ui-btn-up-c ui-radio-off"><span class="ui-btn-inner"><span class="ui-btn-text">Art</span></span></label></div>
+	         	
+	    </div></fieldset>
+					</form>
+                </div>
+            </div>
+        </div>
+        <!-- /page -->
+
+        <div data-role="page" id="map">
             <div data-role="header">
                 <h1>Page Title</h1>
             </div><!-- /header -->
