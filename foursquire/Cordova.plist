@@ -22,6 +22,7 @@
 	<false/>
 	<key>ExternalHosts</key>
 	<array>
+		<string>*.elasticbeanstalk.com</string>
 		<string>*.apigee.com</string>
 		<string>*.usergrid.com</string>
 		<string>*.4sqi.net</string>
