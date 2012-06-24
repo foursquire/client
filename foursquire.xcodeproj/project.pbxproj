@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A4E1A491595934F0065DCF8 /* CDVWebInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E1A481595934F0065DCF8 /* CDVWebInspector.m */; };
+		8A63BCDE1596E4AC008A8DFD /* PushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A63BCDD1596E4AC008A8DFD /* PushNotification.m */; };
 		8A8F0ACC1595842700C24F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8F0ACB1595842700C24F70 /* Foundation.framework */; };
 		8A8F0ACE1595842700C24F70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8F0ACD1595842700C24F70 /* UIKit.framework */; };
 		8A8F0AD01595842700C24F70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8F0ACF1595842700C24F70 /* CoreGraphics.framework */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		8A4E1A481595934F0065DCF8 /* CDVWebInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVWebInspector.m; path = Plugins/CDVWebInspector.m; sourceTree = "<group>"; };
+		8A63BCDC1596E4AC008A8DFD /* PushNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushNotification.h; path = Plugins/PushNotification.h; sourceTree = "<group>"; };
+		8A63BCDD1596E4AC008A8DFD /* PushNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushNotification.m; path = Plugins/PushNotification.m; sourceTree = "<group>"; };
 		8A8F0AC71595842700C24F70 /* foursquire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foursquire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8F0ACB1595842700C24F70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A8F0ACD1595842700C24F70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -258,6 +261,8 @@
 		8A8F0B1A1595842800C24F70 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				8A63BCDC1596E4AC008A8DFD /* PushNotification.h */,
+				8A63BCDD1596E4AC008A8DFD /* PushNotification.m */,
 				8A4E1A481595934F0065DCF8 /* CDVWebInspector.m */,
 				8A8F0B1B1595842800C24F70 /* README */,
 			);
@@ -364,6 +369,7 @@
 				8A8F0B141595842800C24F70 /* AppDelegate.m in Sources */,
 				8A8F0B171595842800C24F70 /* MainViewController.m in Sources */,
 				8A4E1A491595934F0065DCF8 /* CDVWebInspector.m in Sources */,
+				8A63BCDE1596E4AC008A8DFD /* PushNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

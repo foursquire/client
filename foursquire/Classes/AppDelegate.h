@@ -19,9 +19,9 @@
 
 //
 //  AppDelegate.h
-//  foursquire
+//  UACordova
 //
-//  Created by Tim Anglade on 6/22/12.
+//  Created by hmkang on 3/22/12.
 //  Copyright __MyCompanyName__ 2012. All rights reserved.
 //
 
@@ -33,16 +33,22 @@
     #import "CDVViewController.h"
 #endif
 
+#import "PushNotification.h"
 
-@interface AppDelegate : NSObject < UIApplicationDelegate > {
 
+@interface AppDelegate : NSObject < UIApplicationDelegate, UIWebViewDelegate, CDVCommandDelegate > {
+
+	NSString* invokeString;
+    NSDictionary *launchNotification;
 }
 
 // invoke string is passed to your app on launch, this is only valid if you 
-// edit foursquire-Info.plist to add a protocol
+// edit FooBar.plist to add a protocol
 // a simple tutorial can be found here : 
 // http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
 
+@property (nonatomic, copy)  NSString* invokeString;
+@property (nonatomic, retain) NSDictionary *launchNotification;
 @property (nonatomic, retain) IBOutlet UIWindow* window;
 @property (nonatomic, retain) IBOutlet CDVViewController* viewController;
 
