@@ -18,6 +18,16 @@
 .vitals h3, .vitals p {padding:0;margin:0;line-height:1.2em;text-shadow:none}
 .vitals p {font-size:.8em}
 
+#signin {
+	background-image: url('assets/signin.png');
+	background-repeat: no-repeat;
+}
+#connect_fq {
+	position: absolute;
+	top: 160px;
+	left: 10px;
+}
+
 /** CSS for non-standard jQuery Mobile styles or Codiqa components **/
 .split-wrapper {
   width: 100%;

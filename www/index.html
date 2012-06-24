@@ -34,12 +34,13 @@
         <script type="text/javascript">
             // If you want to prevent dragging, uncomment this section
             
+            /*
             function preventBehavior(e) 
             { 
               e.preventDefault(); 
             };
             document.addEventListener("touchmove", preventBehavior, false);
-            
+            */
             
             
             /* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
@@ -72,50 +73,58 @@
         </script>
     </head>
     <body onload="onBodyLoad()">
-        <!-- Home -->
+        <div data-role="page" id="signin">
+
+            <div data-role="content">
+                <img id="connect_fq" src="assets/connect-blue@2x.png"/>
+            </div>
+        </div>
+
         <!-- Home -->
         <div data-role="page" id="home" data-theme="c">
           <div data-role="content" class="challenge">
                 <div id="branding">
 
                 </div>
-            <p style="padding:4px;margin:0;background-color:#848484;font-size:14px;color:white;font-weight:normal;text-shadow:none">Challenge an opponent</p>
+                <div data-role="header">
+                    <h1>Pick an Opponent</h1>
+                </div><!-- /header -->
+            <!--<p style="padding:4px;margin:0;background-color:#848484;font-size:14px;color:white;font-weight:normal;text-shadow:none">Challenge an opponent</p>-->
             <div>                                        
-                    <ul data-role="" data-inset="true" id="opponents">
+                <ul data-role="" data-inset="true" id="opponents">
                       <li class="challenger">
-                      	<img class="avatar" src="https://is0.4sqi.net/userpix_thumbs/1420_1236964330.jpg" /> 
-                      	<div class="challenge_button"><a href="#map">Challenge</a></div>
-                      	<div class="vitals">
-                      		<h3>Tim Anglade</h3>
-                      		<p class="venue">
-                      			<span>Last seen: </span>Apigee Corp
-                      		</p>
-                      		<p class="city">Palo Alto, CA</p>
-                      	</div>
-                	</li>
+                       <img class="avatar" src="https://is0.4sqi.net/userpix_thumbs/1420_1236964330.jpg" /> 
+                       <div class="challenge_button"><a href="#map">Challenge</a></div>
+                       <div class="vitals">
+                               <h3>Tim Anglade</h3>
+                               <p class="venue">
+                                       <span>Last seen: </span>Apigee Corp
+                               </p>
+                               <p class="city">Palo Alto, CA</p>
+                       </div>
+                       </li>
                       <li class="challenger">
-                      	<img class="avatar" src="https://is0.4sqi.net/userpix_thumbs/1420_1236964330.jpg" /> 
-                      	<div class="challenge_button"><a href="#map">Challenge</a></div>
-                      	<div class="vitals">
-                      		<h3>Marsh Gardiner</h3>
-                      		<p class="venue">
-                      			<span>Last seen: </span>Caltrain Station
-                      		</p>
-                      		<p class="city">Palo Alto, CA</p>
-                      	</div>
-                	</li>
+                       <img class="avatar" src="https://is0.4sqi.net/userpix_thumbs/1420_1236964330.jpg" /> 
+                       <div class="challenge_button"><a href="#map">Challenge</a></div>
+                       <div class="vitals">
+                               <h3>Marsh Gardiner</h3>
+                               <p class="venue">
+                                       <span>Last seen: </span>Caltrain Station
+                               </p>
+                               <p class="city">Palo Alto, CA</p>
+                       </div>
+                       </li>
                       <li class="challenger">
-                      	<img class="avatar" src="https://is0.4sqi.net/userpix_thumbs/1420_1236964330.jpg" /> 
-                      	<div class="challenge_button"><a href="#map">Challenge</a></div>
-                      	<div class="vitals">
-                      		<h3>Ed Anuff</h3>
-                      		<p class="venue">
-                      			<span>Last seen: </span>AOL West Building
-                      		</p>
-                      		<p class="city">Palo Alto, CA</p>
-                      	</div>
-                	</li>
-                    </ul>                    
+                       <img class="avatar" src="https://is0.4sqi.net/userpix_thumbs/1420_1236964330.jpg" /> 
+                       <div class="challenge_button"><a href="#map">Challenge</a></div>
+                       <div class="vitals">
+                               <h3>Ed Anuff</h3>
+                               <p class="venue">
+                                       <span>Last seen: </span>AOL West Building
+                               </p>
+                               <p class="city">Palo Alto, CA</p>
+                       </div>
+                       </li>                   
                 </div>
             </div>
         </div>
@@ -157,7 +166,6 @@
             </div><!-- /content -->
 
             <div data-role="footer">
-                <img id="connect_fq" src="assets/connect-blue@2x.png"/>
                 <h4>Page Footer</h4>
             </div><!-- /footer -->
         </div>
