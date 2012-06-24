@@ -63,6 +63,7 @@ $(document).ready(function() {
     /* Here we check if the url is the login success */
     if (loc.indexOf('https://foursquire.herokuapp.com/callback') == 0) {
         client_browser.close();
+        window.location = window.location + '#home'
         loc = unescape(loc);
         console.log("foursquareAuthLocChanged: " + loc);
         var s = loc.match(/#(.*)$/)[1];
